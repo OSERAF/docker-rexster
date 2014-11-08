@@ -224,5 +224,20 @@
                 </allows>
             </extensions>
         </graph>
+        <graph>
+                <graph-enabled>true</graph-enabled>
+                <graph-name>WPIorient</graph-name>
+                <graph-type>com.tinkerpop.rexster.OrientGraphConfiguration</graph-type>
+                <graph-location>remote:10.0.1.21/wpi</graph-location>
+                <properties>
+                        <username>admin</username>
+                        <password>admin</password>
+                </properties>
+                <extensions>
+                        <allows>
+                                <allow>tp:gremlin</allow>
+                        </allows>
+                </extensions>
+        </graph>
     </graphs>
 </rexster>
