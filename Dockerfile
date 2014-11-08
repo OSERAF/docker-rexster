@@ -39,4 +39,4 @@ RUN mv rexster.xml /rexster-server/config
 WORKDIR rexster-server
 
 ## Entrypoint
-ENTRYPOINT ["bin/rexster.sh", "--start"]
+#ENTRYPOINT ["bin/rexster.sh", "--start"]

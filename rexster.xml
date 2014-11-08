@@ -228,7 +228,7 @@
                 <graph-enabled>true</graph-enabled>
                 <graph-name>WPIorient</graph-name>
                 <graph-type>com.tinkerpop.rexster.OrientGraphConfiguration</graph-type>
-                <graph-location>remote:10.0.1.21/wpi</graph-location>
+                <graph-location>remote:10.0.0.21/wpi</graph-location>
                 <properties>
                         <username>admin</username>
                         <password>admin</password>
