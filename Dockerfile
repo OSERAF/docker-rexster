@@ -32,6 +32,9 @@ EXPOSE 8184
 # Shutdown listener port
 EXPOSE 8183
 
+ADD rexster.xml /
+
+RUN mv rexster.xml /rexster-server/config
 # USER oseraf
 WORKDIR rexster-server
 
