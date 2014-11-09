@@ -13,6 +13,7 @@ RUN yum -y update; yum clean all
 # Rexster requires Java 7 to run
 # install system deps
 RUN yum -y install wget
+RUN yum -y install tar
 RUN yum -y install install java-1.7.0-openjdk-devel
 
 # Get Rester Server and install
@@ -34,9 +35,17 @@ EXPOSE 8183
 
 ADD rexster.xml /
 
-RUN mv rexster.xml /rexster-server/config
+RUN mv rexster.xml /rexster-server/config 
+
+ADD orientlib.zip /
+
+RUN mv orientlib.zip /rexster-server/lib \
+	&& cd /rexster-server/lib \
+	&& unzip orientlib.zip \
+	&& rm orientlib.zip \
+	&& cd /
 # USER oseraf
 WORKDIR rexster-server
 
 ## Entrypoint
-#ENTRYPOINT ["bin/rexster.sh", "--start"]
+ENTRYPOINT ["bin/rexster.sh", "--start"]
