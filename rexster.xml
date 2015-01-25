@@ -3,7 +3,7 @@
     <http>
         <server-port>8182</server-port>
         <server-host>oseraf-rexster</server-host>
-        <base-uri>http://54.173.149.249</base-uri>
+        <base-uri>http://54.210.32.19</base-uri>
         <web-root>public</web-root>
         <character-set>UTF-8</character-set>
         <enable-jmx>false</enable-jmx>
